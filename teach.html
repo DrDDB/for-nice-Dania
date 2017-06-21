@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="static/foto.ico" type="image/x-icon">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Проверка</title>
   <!-- Compiled and minified CSS -->
@@ -43,7 +43,65 @@
           </div>
         </div>
   <form action="#">
-    <div id="test1" class="col s12" style="padding-top: 20px;">
+      <div id="test1" class="col s12" style="padding-top: 20px;">
+
+        <div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s6"><a href="#new_text">Вопрос с пунктами</a></li>
+        <li class="tab col s6"><a class="active" href="#new_var">Текстовый вопрос</a></li>
+
+      </ul>
+    </div>
+    <div class="big card white">
+      <div class="card-content white-text">
+    <div id="new_text" class="col s12">
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="quest" type="text" class="validate">
+                  <label for="quest">Вопрос</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="score" type="text" class="validate">
+                  <label for="score">Баллы</label>
+                </div>
+              </div>
+              <div class="input-field col s6">
+                <input id="point1" type="text" class="validate">
+                <label for="point1">Пункт</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="point2" type="text" class="validate">
+                <label for="point2">Пункт</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="point3" type="text" class="validate">
+                <label for="point3">Пункт</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="point4" type="text" class="validate">
+                <label for="point4">Пункт</label>
+              </div>
+            </div>
+            <div class="col s12"  id="new_var">
+                <div class="input-field col s12">
+                  <input id="quest" type="text" class="validate">
+                  <label for="quest">Вопрос</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="score" type="text" class="validate">
+                  <label for="score">Баллы</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+
+
+
+
         <div class="row">
           {%for question in questions["bio"]%}
             <div class="col s12 m12">

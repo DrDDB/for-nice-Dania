@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="static/foto.ico" type="image/x-icon">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Учащиеся</title>
+    <title>Регистрация</title>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 
@@ -11,26 +11,51 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <style>
+        html {
+            width: 100%;
+            min-height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        body {
+            width: 100%;
+            min-height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+        }
+        h2 {
+            font-family: 'Lobster', cursive;
+        }
+        .centered {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .panel{
+            background-color:#ECF0F1;
+        }
+        }
+    </style>
 </head>
 <body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
-<table>
-    <thead class="card red lighten-2">
-    <tr>
-        <th>Имя</th>
-        <th>Направления</th>
-        <th>Баллы</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    <tr>
-        <td name=""><a class="waves-effect waves-teal btn-flat">{{student["name"]}}</a></td>
-        <td name="">{{}}</td>
-        <td name="">{{}}</td>
-    </tr>
-    </tbody>
-</table>
-</body>
+<div class="row">
+  <div class="input-field col s12">
+    <input id="email" type="email" class="validate">
+    <label for="email">Login</label>
+  </div>
+</div>
+<a class="waves-effect waves-light btn-large">Go</a>
+<div class="row">
+       <div class="input-field col s12">
+         <input id="password" type="password" class="validate">
+         <label for="password">Password</label>
+       </div>
+     </div>
+     </body>
 </html>
